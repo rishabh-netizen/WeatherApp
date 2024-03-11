@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+</head>
+
+<body>
+    <div class="weatherbackground">
+        <div class="weather">
+            <div class="searchbtn">
+                <div class="text">
+                    <input type="text" id="cityName" placeholder="Search for weather by City Name" />
+                </div>
+                <div class="button">
+                    <button id="btn" onclick="fetchDetails()">Search</button>
+                </div>
+            </div>
+            <div class="details">
+                <h2 id="city"> <img height="30px" width="30px" src="Location.png" alt="">New York, NY</h2>
+                <p id="calender"><img height="30px" width="30px" src="calender.png" alt="">Monday, January 01 2024</p>
+                <div class="temp">
+                    <div class="sun">
+                        <img id="tempimage" src="sun-159392_1280.jpg" alt="">
+                    </div>
+                    <div class="thermometer">
+                        <img height="100px" width="100px" src="thermometer-5_icon-icons.com_64095.png" alt="">
+                    </div>
+                    <div id="temp1" class="temperature">
+                        <h1>75°F</h1>
+                    </div>
+                </div>
+                <div class="others">
+                    <p><img height="30px" width="30px" src="sun (1).png" alt="">Sunny</p>
+                    <p><img height="30px" width="30px" src="thermometer-5_icon-icons.com_64095.png" alt="">Temperature
+                        75°F</p>
+                    <p><img height="30px" width="30px" src="rain.png" alt="">Humidity 60%</p>
+                    <p><img height="30px" width="30px" src="wind.png" alt="">Wind</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+
+</html>
